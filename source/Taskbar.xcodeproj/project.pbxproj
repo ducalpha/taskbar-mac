@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370030031A0AE626000499D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370030021A0AE626000499D9 /* Foundation.framework */; };
+		370030051A0AE62C000499D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370030041A0AE62C000499D9 /* Cocoa.framework */; };
+		3708DF0A1A0C784B00488B10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3708DF091A0C784B00488B10 /* CoreGraphics.framework */; };
+		3708DF0C1A0C7B2500488B10 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3708DF0B1A0C7B2500488B10 /* CoreVideo.framework */; };
+		3708DF0E1A0C7B4200488B10 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3708DF0D1A0C7B4200488B10 /* QuartzCore.framework */; };
+		3736E3481CEFB5C9003CC223 /* Application.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E32E1CEFB5C9003CC223 /* Application.mm */; };
+		3736E3491CEFB5C9003CC223 /* Attribute.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3301CEFB5C9003CC223 /* Attribute.mm */; };
+		3736E34A1CEFB5C9003CC223 /* Common.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3321CEFB5C9003CC223 /* Common.mm */; };
+		3736E34B1CEFB5C9003CC223 /* Observer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3341CEFB5C9003CC223 /* Observer.mm */; };
+		3736E34C1CEFB5C9003CC223 /* UIElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3361CEFB5C9003CC223 /* UIElement.mm */; };
+		3736E34D1CEFB5C9003CC223 /* Window.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3381CEFB5C9003CC223 /* Window.mm */; };
+		3736E34E1CEFB5C9003CC223 /* AXWorkspace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E33A1CEFB5C9003CC223 /* AXWorkspace.mm */; };
+		3736E34F1CEFB5C9003CC223 /* AppleButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E33D1CEFB5C9003CC223 /* AppleButton.mm */; };
+		3736E3501CEFB5CA003CC223 /* HoverButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E33F1CEFB5C9003CC223 /* HoverButton.mm */; };
+		3736E3511CEFB5CA003CC223 /* ShortcutsWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3411CEFB5C9003CC223 /* ShortcutsWindow.mm */; };
+		3736E3521CEFB5CA003CC223 /* StartMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3431CEFB5C9003CC223 /* StartMenu.mm */; };
+		3736E3531CEFB5CA003CC223 /* TaskBarWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3451CEFB5C9003CC223 /* TaskBarWindow.mm */; };
+		3736E3541CEFB5CA003CC223 /* Utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3471CEFB5C9003CC223 /* Utils.mm */; };
+		3736E36B1CEFB6AF003CC223 /* AppleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736E3671CEFB6AF003CC223 /* AppleLogo.png */; };
+		3736E36D1CEFB6AF003CC223 /* AppleLogoHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 3736E3691CEFB6AF003CC223 /* AppleLogoHighlighted.png */; };
+		3736E37A1CEFB74D003CC223 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3771CEFB74D003CC223 /* AppDelegate.mm */; };
+		3736E37C1CEFB74D003CC223 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3736E3791CEFB74D003CC223 /* main.mm */; };
+		373BFBF81CF5480B009356CE /* AppleIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 373BFBF71CF5480B009356CE /* AppleIcon.icns */; };
+		37A4B3191E43C42700E08A50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37A4B3181E43C42700E08A50 /* Images.xcassets */; };
+		37CE8F581E453A5F009E8842 /* MenuHelpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37CE8F571E453A5F009E8842 /* MenuHelpers.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37002FD71A0AE529000499D9 /* Taskbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taskbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		370030021A0AE626000499D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		370030041A0AE62C000499D9 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3708DF091A0C784B00488B10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3708DF0B1A0C7B2500488B10 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3708DF0D1A0C7B4200488B10 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3736E32D1CEFB5C9003CC223 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		3736E32E1CEFB5C9003CC223 /* Application.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = Application.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E32F1CEFB5C9003CC223 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Attribute.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E3301CEFB5C9003CC223 /* Attribute.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = Attribute.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E3311CEFB5C9003CC223 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		3736E3321CEFB5C9003CC223 /* Common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Common.mm; sourceTree = "<group>"; };
+		3736E3331CEFB5C9003CC223 /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		3736E3341CEFB5C9003CC223 /* Observer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Observer.mm; sourceTree = "<group>"; };
+		3736E3351CEFB5C9003CC223 /* UIElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIElement.h; sourceTree = "<group>"; };
+		3736E3361CEFB5C9003CC223 /* UIElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UIElement.mm; sourceTree = "<group>"; };
+		3736E3371CEFB5C9003CC223 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		3736E3381CEFB5C9003CC223 /* Window.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Window.mm; sourceTree = "<group>"; };
+		3736E3391CEFB5C9003CC223 /* AXWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXWorkspace.h; sourceTree = "<group>"; };
+		3736E33A1CEFB5C9003CC223 /* AXWorkspace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AXWorkspace.mm; sourceTree = "<group>"; };
+		3736E33C1CEFB5C9003CC223 /* AppleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleButton.h; sourceTree = "<group>"; };
+		3736E33D1CEFB5C9003CC223 /* AppleButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppleButton.mm; sourceTree = "<group>"; };
+		3736E33E1CEFB5C9003CC223 /* HoverButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = HoverButton.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E33F1CEFB5C9003CC223 /* HoverButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HoverButton.mm; sourceTree = "<group>"; };
+		3736E3401CEFB5C9003CC223 /* ShortcutsWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortcutsWindow.h; sourceTree = "<group>"; };
+		3736E3411CEFB5C9003CC223 /* ShortcutsWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = ShortcutsWindow.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E3421CEFB5C9003CC223 /* StartMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartMenu.h; sourceTree = "<group>"; };
+		3736E3431CEFB5C9003CC223 /* StartMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = StartMenu.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E3441CEFB5C9003CC223 /* TaskBarWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskBarWindow.h; sourceTree = "<group>"; };
+		3736E3451CEFB5C9003CC223 /* TaskBarWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TaskBarWindow.mm; sourceTree = "<group>"; };
+		3736E3461CEFB5C9003CC223 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Utils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E3471CEFB5C9003CC223 /* Utils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = Utils.mm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3736E3671CEFB6AF003CC223 /* AppleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogo.png; sourceTree = "<group>"; };
+		3736E3691CEFB6AF003CC223 /* AppleLogoHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogoHighlighted.png; sourceTree = "<group>"; };
+		3736E3761CEFB74D003CC223 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3736E3771CEFB74D003CC223 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		3736E3781CEFB74D003CC223 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../main/Info.plist; sourceTree = "<group>"; };
+		3736E3791CEFB74D003CC223 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		373BFBF71CF5480B009356CE /* AppleIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppleIcon.icns; sourceTree = "<group>"; };
+		37A4B3181E43C42700E08A50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37CE8F561E453A5F009E8842 /* MenuHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuHelpers.h; sourceTree = "<group>"; };
+		37CE8F571E453A5F009E8842 /* MenuHelpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MenuHelpers.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37002FD41A0AE529000499D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3708DF0E1A0C7B4200488B10 /* QuartzCore.framework in Frameworks */,
+				3708DF0C1A0C7B2500488B10 /* CoreVideo.framework in Frameworks */,
+				3708DF0A1A0C784B00488B10 /* CoreGraphics.framework in Frameworks */,
+				370030051A0AE62C000499D9 /* Cocoa.framework in Frameworks */,
+				370030031A0AE626000499D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37002FCE1A0AE528000499D9 = {
+			isa = PBXGroup;
+			children = (
+				3736E32C1CEFB5C9003CC223 /* ax */,
+				3736E33B1CEFB5C9003CC223 /* ui */,
+				3736E3651CEFB6AF003CC223 /* assets */,
+				3736E3751CEFB74D003CC223 /* main */,
+				370030011A0AE614000499D9 /* Frameworks */,
+				37002FD81A0AE529000499D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37002FD81A0AE529000499D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37002FD71A0AE529000499D9 /* Taskbar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		370030011A0AE614000499D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3708DF0D1A0C7B4200488B10 /* QuartzCore.framework */,
+				3708DF0B1A0C7B2500488B10 /* CoreVideo.framework */,
+				3708DF091A0C784B00488B10 /* CoreGraphics.framework */,
+				370030021A0AE626000499D9 /* Foundation.framework */,
+				370030041A0AE62C000499D9 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3736E32C1CEFB5C9003CC223 /* ax */ = {
+			isa = PBXGroup;
+			children = (
+				3736E32D1CEFB5C9003CC223 /* Application.h */,
+				3736E32E1CEFB5C9003CC223 /* Application.mm */,
+				3736E32F1CEFB5C9003CC223 /* Attribute.h */,
+				3736E3301CEFB5C9003CC223 /* Attribute.mm */,
+				3736E3391CEFB5C9003CC223 /* AXWorkspace.h */,
+				3736E33A1CEFB5C9003CC223 /* AXWorkspace.mm */,
+				3736E3311CEFB5C9003CC223 /* Common.h */,
+				3736E3321CEFB5C9003CC223 /* Common.mm */,
+				3736E3331CEFB5C9003CC223 /* Observer.h */,
+				3736E3341CEFB5C9003CC223 /* Observer.mm */,
+				3736E3351CEFB5C9003CC223 /* UIElement.h */,
+				3736E3361CEFB5C9003CC223 /* UIElement.mm */,
+				3736E3371CEFB5C9003CC223 /* Window.h */,
+				3736E3381CEFB5C9003CC223 /* Window.mm */,
+			);
+			path = ax;
+			sourceTree = "<group>";
+		};
+		3736E33B1CEFB5C9003CC223 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				3736E33C1CEFB5C9003CC223 /* AppleButton.h */,
+				3736E33D1CEFB5C9003CC223 /* AppleButton.mm */,
+				3736E33E1CEFB5C9003CC223 /* HoverButton.h */,
+				3736E33F1CEFB5C9003CC223 /* HoverButton.mm */,
+				37CE8F561E453A5F009E8842 /* MenuHelpers.h */,
+				37CE8F571E453A5F009E8842 /* MenuHelpers.mm */,
+				3736E3401CEFB5C9003CC223 /* ShortcutsWindow.h */,
+				3736E3411CEFB5C9003CC223 /* ShortcutsWindow.mm */,
+				3736E3421CEFB5C9003CC223 /* StartMenu.h */,
+				3736E3431CEFB5C9003CC223 /* StartMenu.mm */,
+				3736E3441CEFB5C9003CC223 /* TaskBarWindow.h */,
+				3736E3451CEFB5C9003CC223 /* TaskBarWindow.mm */,
+				3736E3461CEFB5C9003CC223 /* Utils.h */,
+				3736E3471CEFB5C9003CC223 /* Utils.mm */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		3736E3651CEFB6AF003CC223 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				37A4B3181E43C42700E08A50 /* Images.xcassets */,
+				3736E3781CEFB74D003CC223 /* Info.plist */,
+				373BFBF71CF5480B009356CE /* AppleIcon.icns */,
+				3736E3671CEFB6AF003CC223 /* AppleLogo.png */,
+				3736E3691CEFB6AF003CC223 /* AppleLogoHighlighted.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		3736E3751CEFB74D003CC223 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				3736E3761CEFB74D003CC223 /* AppDelegate.h */,
+				3736E3771CEFB74D003CC223 /* AppDelegate.mm */,
+				3736E3791CEFB74D003CC223 /* main.mm */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37002FD61A0AE529000499D9 /* Taskbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37002FF41A0AE529000499D9 /* Build configuration list for PBXNativeTarget "Taskbar" */;
+			buildPhases = (
+				37002FD31A0AE529000499D9 /* Sources */,
+				37002FD41A0AE529000499D9 /* Frameworks */,
+				37002FD51A0AE529000499D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Taskbar;
+			productName = Taskbar;
+			productReference = 37002FD71A0AE529000499D9 /* Taskbar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37002FCF1A0AE528000499D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = na;
+				TargetAttributes = {
+					37002FD61A0AE529000499D9 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 37002FD21A0AE528000499D9 /* Build configuration list for PBXProject "Taskbar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37002FCE1A0AE528000499D9;
+			productRefGroup = 37002FD81A0AE529000499D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37002FD61A0AE529000499D9 /* Taskbar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37002FD51A0AE529000499D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				373BFBF81CF5480B009356CE /* AppleIcon.icns in Resources */,
+				37A4B3191E43C42700E08A50 /* Images.xcassets in Resources */,
+				3736E36B1CEFB6AF003CC223 /* AppleLogo.png in Resources */,
+				3736E36D1CEFB6AF003CC223 /* AppleLogoHighlighted.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37002FD31A0AE529000499D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3736E34C1CEFB5C9003CC223 /* UIElement.mm in Sources */,
+				3736E34D1CEFB5C9003CC223 /* Window.mm in Sources */,
+				37CE8F581E453A5F009E8842 /* MenuHelpers.mm in Sources */,
+				3736E34A1CEFB5C9003CC223 /* Common.mm in Sources */,
+				3736E3511CEFB5CA003CC223 /* ShortcutsWindow.mm in Sources */,
+				3736E3541CEFB5CA003CC223 /* Utils.mm in Sources */,
+				3736E3521CEFB5CA003CC223 /* StartMenu.mm in Sources */,
+				3736E3491CEFB5C9003CC223 /* Attribute.mm in Sources */,
+				3736E3501CEFB5CA003CC223 /* HoverButton.mm in Sources */,
+				3736E34F1CEFB5C9003CC223 /* AppleButton.mm in Sources */,
+				3736E37C1CEFB74D003CC223 /* main.mm in Sources */,
+				3736E3531CEFB5CA003CC223 /* TaskBarWindow.mm in Sources */,
+				3736E37A1CEFB74D003CC223 /* AppDelegate.mm in Sources */,
+				3736E34E1CEFB5C9003CC223 /* AXWorkspace.mm in Sources */,
+				3736E3481CEFB5C9003CC223 /* Application.mm in Sources */,
+				3736E34B1CEFB5C9003CC223 /* Observer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		37002FF21A0AE529000499D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "bin/$(PLATFORM_NAME)/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					.,
+				);
+				INFOPLIST_FILE = main/Info.plist;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Taskbar;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		37002FF31A0AE529000499D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "bin/$(PLATFORM_NAME)/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					.,
+				);
+				INFOPLIST_FILE = main/Info.plist;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Taskbar;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		37002FF51A0AE529000499D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.showdownsoftware.taskbar;
+			};
+			name = Debug;
+		};
+		37002FF61A0AE529000499D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = ../bin;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.showdownsoftware.taskbar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37002FD21A0AE528000499D9 /* Build configuration list for PBXProject "Taskbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37002FF21A0AE529000499D9 /* Debug */,
+				37002FF31A0AE529000499D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37002FF41A0AE529000499D9 /* Build configuration list for PBXNativeTarget "Taskbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37002FF51A0AE529000499D9 /* Debug */,
+				37002FF61A0AE529000499D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37002FCF1A0AE528000499D9 /* Project object */;
+}
